@@ -1,0 +1,64 @@
+#placeholderimg
+{
+    display:flex;
+  height: 10px;
+  width:100px;
+}
+#headerlinks
+{
+
+    display:flex;
+    flex-direction:row;
+  justify-content: space-between;
+    background-color: navy;
+    color:pink;
+    
+}
+#link1
+{
+    color:beige;
+}
+#link2
+{
+    color:beige;
+}
+#link3{
+    color:beige;
+}
+#link4
+{
+    color:beige;
+}
+ .hero {
+    /* display:grid; */
+  background-image:url(Accessibility.jpg) ;
+  background-size: cover;
+  background-position: center;
+  color:blue;
+  text-align: center;
+  padding: 20px;
+  /* grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; */
+  
+}
+#about{
+    display:grid;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#footer
+{
+    background-color:navy;
+    color:azure;
+}
+#address
+{display:flex;
+    align-items: flex-end;
+}
+@media (width < 500px)
+{
+    nav{
+        flex-direction: column;
+        
+    }
+}
