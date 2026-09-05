@@ -1,70 +1,127 @@
-#placeholderimg
-{
-    display:flex;
-  height: 10px;
-  width:100px;
+#placeholderimg {
+    display: flex;
+    height: 100px;
+    width: 100px;
 }
-#headerlinks
-{
 
-    display:flex;
-    flex-direction:row;
-  justify-content: space-between;
+.nav ul {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: navy;
-    color:pink;
-    
+    color: pink;
+
 }
-#link1
-{
-    color:beige;
+
+.sectionmain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    gap: 20px;
+
+
+
 }
-#link2
-{
-    color:beige;
+
+#about {
+    background-color: antiquewhite;
 }
-#link3{
-    color:beige;
+
+#mission {
+    background-color: antiquewhite;
 }
-#link4
-{
-    color:beige;
-}
- .hero {
-    /* display:grid; */
-  background-image:url(Accessibility.jpg) ;
-  background-size: cover;
-  background-position: center;
-  color:blue;
-  text-align: center;
-  padding: 20px;
-  /* grid-template-columns: repeat(2, 1fr);
-  gap: 2rem; */
-  
-}
-#about #art1{
-    display:grid;
-    font-family: Arial, Helvetica, sans-serif;
-    border:solid black;
-    gap:20px;
+
+#value {
+    border: solid black;
     border-radius: 20px;
-    height:500px;
-    width:200px;
-    
+    background-color: antiquewhite;
 }
-#footer
-{
-    background-color:navy;
-    color:azure;
+
+#link1 {
+    color: beige;
 }
-#address
-{display:flex;
-    align-items: flex-end;
+
+#link2 {
+    color: beige;
 }
-@media (max-width: 600px)
-{
-    .nav #headerlinks{
+
+#link3 {
+    color: beige;
+}
+
+#link4 {
+    color: beige;
+}
+
+.hero {
+    /* display:grid; */
+    background-image: url(Accessibility.jpg);
+    background-size: 100;
+    background-position: center;
+    color: blue;
+    text-align: center;
+    padding: 20px;
+    /* grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; */
+
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid black;
+
+    border-radius: 20px;
+    /* height:300px;
+    width:200px; */
+
+}
+
+#mission {
+    display: grid;
+    border: solid black;
+    gap: 20px;
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+
+}
+
+#form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px; /* Adds space between fields and button */
+    flex-wrap: wrap;
+
+    /* max-width: 400px; */
+
+}
+
+
+
+@media (max-width:600px) {
+    .nav ul {
+        display: flex;
         flex-direction: column;
-        align-items:flex-start;
-        
     }
+}
+#footer {
+    width: 100%;
+    background-color: #222;
+    color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 40px;
+    box-sizing: border-box;
+    text-align: left; /* Change to 'center' if you want the text centered */
+}
+
+#footer a {
+    color: #4da6ff;
+    text-decoration: none;
+}
+.footer-content p {
+    margin: 8px 0;
 }
